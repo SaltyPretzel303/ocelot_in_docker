@@ -25,5 +25,7 @@ int main(void)
 
 	cudaFree(dev_c);
 
+	cudaDeviceReset();
+
 	return 0;
 }

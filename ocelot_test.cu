@@ -98,5 +98,7 @@ int main(void)
 	free(vec_a);
 	free(vec_b);
 
+	cudaDeviceReset();
+
 	return 0;
 }

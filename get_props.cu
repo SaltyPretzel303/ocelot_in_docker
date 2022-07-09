@@ -21,5 +21,7 @@ int main(void)
 	printf("Max threads per multi-proc: %d\n", deviceProp.maxThreadsPerMultiProcessor);
 	printf("Warp size: %d \n", deviceProp.warpSize);
 
+	cudaDeviceReset();
+
 	return 0;
 }
