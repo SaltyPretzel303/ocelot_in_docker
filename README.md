@@ -26,5 +26,7 @@ This will build and execute script 'script_name' inside the oc_container (contia
 While your sripts are still in development it could be smart to test it on the simulator first beacuse in the case of some 
 thread locks or infinite loops your gpu will be unusable for further testing and if that is your only gpu you will have to 
 reboot the machine to use it again. Same script on simulator will either break and exit on its own or you will simply be able 
-to cancel it with the `ctrl+c` which is not the case if it is run on GPU.
-Or if you simply do not have nvidia gpu this can be handy for some educational purpose.
+to cancel it with the `ctrl+c` which is not the case if it is run on GPU.  
+Or if you simply do not have nvidia gpu this can be handy for some educational purpose. 
+
+More info can be found on https://github.com/gtcasl/gpuocelot
