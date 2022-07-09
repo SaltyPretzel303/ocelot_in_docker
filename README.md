@@ -3,14 +3,14 @@
 How and why to use. 
 
 1)  Install docker. 
-2)  Clone this repository and navigate to it (git clone https://github.com/saltypretzel303/ocelot_in_docker; cd ocelot_in_docker)
+2)  `$ git clone https://github.com/saltypretzel303/ocelot_in_docker; cd ocelot_in_docker`
 3)  `$ docker build --tag oc_gpu --file oc.Dockerfile . `
 4)  `$ docker run -it --rm --name oc_container oc_gpu`
 
 This will create docker container capable of running cuda code on the CPU. 
 
 5)  Write your own cuda code in the file with .cu extension (might be that it doesn't have to be .cu). 
-    Or just use on of the provided scripts for testing if oc_container is working. 
+    Or just use one of the provided scripts for testing if oc_container is working. 
     - get_props.cu -> will just print some of the device properties, some of them might have invalid values because after all 
         they are gonna be read from 'simulator' and not an actuall device. 
     - hello.cu -> will calculate the sum of two numbers on the gpu 
