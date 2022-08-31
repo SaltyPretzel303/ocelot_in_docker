@@ -14,7 +14,7 @@ From here you can take two paths.
 ### Path 1 - Continue development from the inside of the container
 - 5.) `$ cd /src`
 - 6.) Write some cuda script (vim is available as an editor)
-- 7.) `$ ./oc_run.sh my_script /src/oc_out` (replace my_script with the actuall script name/path)  
+- 7.) `$ ./oc_build.sh my_script /src/oc_out` (replace my_script with the actuall script name/path)  
 - 8.) `$ ./oc_out`
 
 ### Path 2 - (Recommended) Continue development outside of the container and then copy -> build -> execute scripts inside the container.
